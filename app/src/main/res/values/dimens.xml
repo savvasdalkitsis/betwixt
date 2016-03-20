@@ -1,0 +1,18 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="recycler_view_horizontal_padding">16dp</dimen>
+    <dimen name="recycler_view_top_padding">16dp</dimen>
+
+    <!-- recycler_view_top_padding + card_spacing -->
+    <dimen name="recycler_view_bottom_padding">31dp</dimen>
+
+    <dimen name="interpolation_width">2dp</dimen>
+    <dimen name="card_spacing">15dp</dimen>
+    <dimen name="card_elevation">4dp</dimen>
+    <dimen name="circle_radius">10dp</dimen>
+    <dimen name="play_inset">50dp</dimen>
+    <dimen name="dash_size">10dp</dimen>
+    <dimen name="interpolator_description_size">10sp</dimen>
+    <dimen name="text_padding_left">5dp</dimen>
+    <dimen name="interpolator_view_height">280dp</dimen>
+</resources>
