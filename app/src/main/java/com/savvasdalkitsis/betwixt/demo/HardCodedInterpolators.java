@@ -36,6 +36,7 @@ import static com.savvasdalkitsis.betwixt.Interpolators.multiply;
 import static com.savvasdalkitsis.betwixt.Interpolators.overshoot;
 import static com.savvasdalkitsis.betwixt.Interpolators.pingPong;
 import static com.savvasdalkitsis.betwixt.Interpolators.rasterize;
+import static com.savvasdalkitsis.betwixt.Interpolators.repeat;
 import static com.savvasdalkitsis.betwixt.Interpolators.reverse;
 import static com.savvasdalkitsis.betwixt.Interpolators.step;
 
@@ -68,8 +69,8 @@ public class HardCodedInterpolators {
                     "fastOutLinearIn"),
             new Pair(pingPong(accelerateDecelerate()),
                     "pingPong(accelerateDecelerate)"),
-            new Pair(join(3, pingPong(accelerateDecelerate())),
-                    "join(3, pingPong(accelerateDecelerate))"),
+            new Pair(repeat(3, pingPong(accelerateDecelerate())),
+                    "repeat(3, pingPong(accelerateDecelerate))"),
             new Pair(pingPong(multiply(accelerateDecelerate(), anticipateOvershoot())),
                     "pingPong(multiply(accelerateDecelerate, anticipateOvershoot))"),
             new Pair(pingPong(linear()),
