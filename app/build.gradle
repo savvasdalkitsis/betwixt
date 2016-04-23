@@ -2,21 +2,45 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 23
-    buildToolsVersion "23.0.2"
+    buildToolsVersion "23.0.3"
 
     defaultConfig {
-        applicationId "com.savvasdalkitsis.interpolators"
+        applicationId "com.savvasdalkitsis.betwixt"
         minSdkVersion 14
         targetSdkVersion 23
         versionCode 1
         versionName "1.0"
     }
+    signingConfigs {
+        release {
+            storeFile file(KEYSTORE_FILE)
+            keyAlias KEYSTORE_ALIAS
+            storePassword ""
+            keyPassword ""
+        }
+    }
     buildTypes {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
         }
     }
+}
+
+gradle.taskGraph.whenReady { taskGraph ->
+    if(taskGraph.hasTask(':app:assembleRelease')) {
+        // Only execute when we are trying to assemble a release build
+
+        android.signingConfigs.release.storePassword =
+                project.hasProperty("KEYSTORE_STORE_PASS") ? KEYSTORE_STORE_PASS : askFor("Please enter store passphrase: ")
+        android.signingConfigs.release.keyPassword =
+                project.hasProperty("KEYSTORE_KEY_PASS") ? KEYSTORE_KEY_PASS : askFor("Please enter key passphrase: ")
+    }
+}
+
+def askFor(String msg) {
+    new String(System.console().readPassword("\n$msg"))
 }
 
 dependencies {
