@@ -15,4 +15,5 @@
     <dimen name="interpolator_description_size">10sp</dimen>
     <dimen name="text_padding_left">5dp</dimen>
     <dimen name="interpolator_view_height">280dp</dimen>
+    <dimen name="about_padding">20dp</dimen>
 </resources>

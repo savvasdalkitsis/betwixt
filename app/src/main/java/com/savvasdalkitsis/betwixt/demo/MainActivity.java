@@ -15,8 +15,8 @@
  */
 package com.savvasdalkitsis.betwixt.demo;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.Menu;
@@ -49,16 +49,28 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        if (item.getItemId() == R.id.play_all) {
-            int childCount = recyclerView.getChildCount();
-            for (int i=0; i< childCount; i++) {
-                View view = recyclerView.getChildAt(i).findViewById(R.id.interpolation_view);
-                if (view != null) {
-                    view.performClick();
-                }
-            }
-            return true;
+        switch (item.getItemId()) {
+            case R.id.play_all:
+                playAllVisibleInterpolators();
+                return true;
+            case R.id.about:
+                showAboutDialog();
+                return true;
         }
         return false;
+    }
+
+    private void showAboutDialog() {
+        new AboutDialog().show(getSupportFragmentManager(), "about");
+    }
+
+    private void playAllVisibleInterpolators() {
+        int childCount = recyclerView.getChildCount();
+        for (int i=0; i< childCount; i++) {
+            View view = recyclerView.getChildAt(i).findViewById(R.id.interpolation_view);
+            if (view != null) {
+                view.performClick();
+            }
+        }
     }
 }
