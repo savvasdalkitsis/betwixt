@@ -44,6 +44,13 @@ join(accelerateDecelerate(), flip(bounce()))
 ```
 ![joinAccelerateDecelerateFlipBounce](resources/images/joinAccelerateDecelerateFlipBounce.png)
 
+Download
+======
+
+This library is still in early development. Artifacts will be published soon to JCenter.
+For now, if you want to try it out, you can download the source and add it manually
+to your project.
+
 License
 -------
 
