@@ -47,10 +47,19 @@ join(accelerateDecelerate(), flip(bounce()))
 Download
 ======
 
-The library is published on **JCenter**. Note that it is still in early development and things might
+The library will soon be published on **JCenter**. Note that it is still in early development and things might
 change with subsequent versions.
 
 To use it in your project, add the following to your project
+
+- Add custom maven repository until the library is published on JCenter
+```groovy
+repositories {
+    maven {
+        url 'https://dl.bintray.com/savvasdalkitsis/maven/'
+    }
+}
+```
 
 - Gradle:
 ```groovy
