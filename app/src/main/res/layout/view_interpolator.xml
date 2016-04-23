@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.savvasdalkitsis.interpolators.demo.InterpolatorView
+<com.savvasdalkitsis.betwixt.demo.InterpolatorView
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/interpolation_view"
     android:layout_width="match_parent"

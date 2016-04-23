@@ -1,4 +1,4 @@
-package com.savvasdalkitsis.interpolators.demo;
+package com.savvasdalkitsis.betwixt.demo;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -9,7 +9,7 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 
-import static com.savvasdalkitsis.interpolators.demo.HardCodedInterpolators.INTERPOLATORS;
+import static com.savvasdalkitsis.betwixt.demo.HardCodedInterpolators.INTERPOLATORS;
 
 public class MainActivity extends AppCompatActivity {
 

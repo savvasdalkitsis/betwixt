@@ -1,4 +1,4 @@
-package com.savvasdalkitsis.interpolators.demo;
+package com.savvasdalkitsis.betwixt.demo;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
@@ -17,7 +17,7 @@ import android.util.AttributeSet;
 import android.view.View;
 import android.view.animation.Interpolator;
 
-import static com.savvasdalkitsis.interpolators.Interpolators.*;
+import static com.savvasdalkitsis.betwixt.Interpolators.*;
 
 public class InterpolatorView extends View {
 

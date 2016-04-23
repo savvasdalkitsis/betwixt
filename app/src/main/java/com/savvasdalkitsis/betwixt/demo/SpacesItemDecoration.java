@@ -1,4 +1,4 @@
-package com.savvasdalkitsis.interpolators.demo;
+package com.savvasdalkitsis.betwixt.demo;
 
 import android.graphics.Rect;
 import android.support.v7.widget.RecyclerView;

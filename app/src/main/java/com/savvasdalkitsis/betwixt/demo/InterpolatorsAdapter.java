@@ -1,4 +1,4 @@
-package com.savvasdalkitsis.interpolators.demo;
+package com.savvasdalkitsis.betwixt.demo;
 
 import android.support.annotation.NonNull;
 import android.support.v4.util.Pair;

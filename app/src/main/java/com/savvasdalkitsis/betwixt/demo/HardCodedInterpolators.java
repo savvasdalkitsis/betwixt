@@ -1,28 +1,28 @@
-package com.savvasdalkitsis.interpolators.demo;
+package com.savvasdalkitsis.betwixt.demo;
 
 import android.support.v4.util.Pair;
 import android.view.animation.Interpolator;
 
-import static com.savvasdalkitsis.interpolators.Interpolators.accelerate;
-import static com.savvasdalkitsis.interpolators.Interpolators.accelerateDecelerate;
-import static com.savvasdalkitsis.interpolators.Interpolators.anticipateOvershoot;
-import static com.savvasdalkitsis.interpolators.Interpolators.bounce;
-import static com.savvasdalkitsis.interpolators.Interpolators.clip;
-import static com.savvasdalkitsis.interpolators.Interpolators.constant;
-import static com.savvasdalkitsis.interpolators.Interpolators.decelerate;
-import static com.savvasdalkitsis.interpolators.Interpolators.dilate;
-import static com.savvasdalkitsis.interpolators.Interpolators.fastOutLinearIn;
-import static com.savvasdalkitsis.interpolators.Interpolators.fastOutSlowIn;
-import static com.savvasdalkitsis.interpolators.Interpolators.flip;
-import static com.savvasdalkitsis.interpolators.Interpolators.join;
-import static com.savvasdalkitsis.interpolators.Interpolators.linear;
-import static com.savvasdalkitsis.interpolators.Interpolators.linearOutSlowIn;
-import static com.savvasdalkitsis.interpolators.Interpolators.multiply;
-import static com.savvasdalkitsis.interpolators.Interpolators.overshoot;
-import static com.savvasdalkitsis.interpolators.Interpolators.pingPong;
-import static com.savvasdalkitsis.interpolators.Interpolators.rasterize;
-import static com.savvasdalkitsis.interpolators.Interpolators.reverse;
-import static com.savvasdalkitsis.interpolators.Interpolators.step;
+import static com.savvasdalkitsis.betwixt.Interpolators.accelerate;
+import static com.savvasdalkitsis.betwixt.Interpolators.accelerateDecelerate;
+import static com.savvasdalkitsis.betwixt.Interpolators.anticipateOvershoot;
+import static com.savvasdalkitsis.betwixt.Interpolators.bounce;
+import static com.savvasdalkitsis.betwixt.Interpolators.clip;
+import static com.savvasdalkitsis.betwixt.Interpolators.constant;
+import static com.savvasdalkitsis.betwixt.Interpolators.decelerate;
+import static com.savvasdalkitsis.betwixt.Interpolators.dilate;
+import static com.savvasdalkitsis.betwixt.Interpolators.fastOutLinearIn;
+import static com.savvasdalkitsis.betwixt.Interpolators.fastOutSlowIn;
+import static com.savvasdalkitsis.betwixt.Interpolators.flip;
+import static com.savvasdalkitsis.betwixt.Interpolators.join;
+import static com.savvasdalkitsis.betwixt.Interpolators.linear;
+import static com.savvasdalkitsis.betwixt.Interpolators.linearOutSlowIn;
+import static com.savvasdalkitsis.betwixt.Interpolators.multiply;
+import static com.savvasdalkitsis.betwixt.Interpolators.overshoot;
+import static com.savvasdalkitsis.betwixt.Interpolators.pingPong;
+import static com.savvasdalkitsis.betwixt.Interpolators.rasterize;
+import static com.savvasdalkitsis.betwixt.Interpolators.reverse;
+import static com.savvasdalkitsis.betwixt.Interpolators.step;
 
 public class HardCodedInterpolators {
     @SuppressWarnings("unchecked")

@@ -1,17 +1,17 @@
-package com.savvasdalkitsis.interpolators;
+package com.savvasdalkitsis.betwixt;
 
 import android.view.animation.Interpolator;
 
-class FlipInterpolator implements Interpolator {
+class ReverseInterpolator implements Interpolator {
 
     private final Interpolator interpolator;
 
-    public FlipInterpolator(Interpolator interpolator) {
+    public ReverseInterpolator(Interpolator interpolator) {
         this.interpolator = interpolator;
     }
 
     @Override
     public float getInterpolation(float input) {
-        return 1 - interpolator.getInterpolation(input);
+        return interpolator.getInterpolation(1 - input);
     }
 }

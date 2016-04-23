@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.savvasdalkitsis.interpolators">
+    package="com.savvasdalkitsis.betwixt">
 
     <application
         android:allowBackup="true"

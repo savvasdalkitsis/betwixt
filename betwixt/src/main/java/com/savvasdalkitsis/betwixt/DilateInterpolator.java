@@ -1,4 +1,4 @@
-package com.savvasdalkitsis.interpolators;
+package com.savvasdalkitsis.betwixt;
 
 import android.view.animation.Interpolator;
 

@@ -1,4 +1,4 @@
-package com.savvasdalkitsis.interpolators;
+package com.savvasdalkitsis.betwixt;
 
 import android.graphics.Path;
 import android.support.v4.view.animation.FastOutLinearInInterpolator;
