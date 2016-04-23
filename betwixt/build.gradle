@@ -23,3 +23,30 @@ dependencies {
     testCompile 'junit:junit:4.12'
     compile 'com.android.support:appcompat-v7:23.2.0'
 }
+
+ext {
+    bintrayRepo = 'maven'
+    bintrayName = 'betwixt'
+
+    publishedGroupId = 'com.savvasdalkitsis'
+    libraryName = 'betwixt'
+    artifact = 'betwixt'
+
+    libraryDescription = 'Betwixt (/bɪˈtwɪkst/ - preposition & adverb - archaic term for between) is an android library that aims to provide a unified composable api for animation Interpolators, both provided already by the platform and for new ones provided by the community'
+
+    siteUrl = 'https://github.com/savvasdalkitsis/betwixt'
+    gitUrl = 'https://github.com/savvasdalkitsis/betwixt.git'
+
+    libraryVersion = '0.0.1'
+
+    developerId = 'savvasdalkitsis'
+    developerName = 'Savvas Dalkitsis'
+    developerEmail = 'savvas.dalkitsis@gmail.com'
+
+    licenseName = 'The Apache Software License, Version 2.0'
+    licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+    allLicenses = ["Apache-2.0"]
+}
+
+apply from: '../scripts/installv1.gradle'
+apply from: '../scripts/bintrayv1.gradle'
