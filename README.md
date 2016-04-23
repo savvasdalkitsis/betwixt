@@ -6,6 +6,43 @@ android library that aims to provide a unified composable api for animation
 Interpolators, both provided already by the platform and for new ones provided
 by the community
 
+syntax
+======
+
+**Betwixt** provides a fluent syntax for creating and composing interpolators,
+including ones provided by the Android platform, such as:
+
+```java
+linear()
+```
+![linear](resources/images/linear.png)
+
+```java
+fastOutSlowIn()
+```
+![fastOutSlowIn](resources/images/fastOutSlowIn.png)
+
+but also new custom ones:
+
+```java
+step()
+```
+![step](resources/images/step.png)
+
+The library's power, though, comes from its composable interpolators.
+These allow you to create complex animations like:
+
+```java
+pingPong(accelerateDecelerate())
+```
+![pingPongAccelerateDecelerate](resources/images/pingPongAccelerateDecelerate.png)
+
+and
+
+```java
+join(accelerateDecelerate(), flip(bounce()))
+```
+![joinAccelerateDecelerateFlipBounce](resources/images/joinAccelerateDecelerateFlipBounce.png)
 
 License
 -------
