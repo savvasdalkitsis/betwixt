@@ -47,9 +47,23 @@ join(accelerateDecelerate(), flip(bounce()))
 Download
 ======
 
-This library is still in early development. Artifacts will be published soon to JCenter.
-For now, if you want to try it out, you can download the source and add it manually
-to your project.
+The library is published on **JCenter**. Note that it is still in early development and things might
+change with subsequent versions.
+
+To use it in your project, add the following to your project
+
+- Gradle:
+```groovy
+compile 'com.savvasdalkitsis:betwixt:0.0.1'
+```
+- Maven:
+```xml
+<dependency>
+  <groupId>com.savvasdalkitsis</groupId>
+  <artifactId>betwixt</artifactId>
+  <version>0.0.1</version>
+</dependency>
+```
 
 License
 -------
