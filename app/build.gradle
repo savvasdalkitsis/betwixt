@@ -40,7 +40,13 @@ gradle.taskGraph.whenReady { taskGraph ->
 }
 
 def askFor(String msg) {
-    new String(System.console().readPassword("\n$msg"))
+    def console = System.console()
+    if (console) {
+        return new String(console.readPassword("\n$msg"))
+    } else {
+        throw new GradleException('Could not find console in order to request password.\n' +
+                'If you are running with a gradle daemon, try again with --no-daemon option')
+    }
 }
 
 dependencies {
