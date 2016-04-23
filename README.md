@@ -44,6 +44,13 @@ join(accelerateDecelerate(), flip(bounce()))
 ```
 ![joinAccelerateDecelerateFlipBounce](resources/images/joinAccelerateDecelerateFlipBounce.png)
 
+Try it out
+======
+
+Click below to try an online sample app showing a few interpolators (with animations to show how they run)
+
+[![appetize](resources/images/appetize.png)](https://appetize.io/app/p3848n7h6b950hzkxezyg5x06m?device=nexus5&scale=75&orientation=portrait&osVersion=6.0)
+
 Download
 ======
 
