@@ -6,6 +6,19 @@ android library that aims to provide a unified composable api for animation
 Interpolators, both provided already by the platform and for new ones provided
 by the community
 
+Demo
+======
+
+To see some interpolators in action and examples of how _betwixt_ allows composing of different
+interpolators, try downloading the demo app from Google Play™
+
+<a href='https://play.google.com/store/apps/details?id=com.savvasdalkitsis.betwixt&utm_source=global_co&utm_medium=prtnr&utm_content=Mar2515&utm_campaign=PartBadge&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png'/></a>
+
+or you can try an online demo here (note that performance of the online demo may not be sufficient to
+see smooth animations)
+
+[![appetize](resources/images/appetize.png)](https://appetize.io/app/p3848n7h6b950hzkxezyg5x06m?device=hammerhead&scale=50&orientation=portrait&osVersion=6.0.1)
+
 syntax
 ======
 
@@ -44,29 +57,13 @@ join(accelerateDecelerate(), flip(bounce()))
 ```
 ![joinAccelerateDecelerateFlipBounce](resources/images/joinAccelerateDecelerateFlipBounce.png)
 
-Try it out
-======
-
-Click below to try an online sample app showing a few interpolators (with animations to show how they run)
-
-[![appetize](resources/images/appetize.png)](https://appetize.io/app/p3848n7h6b950hzkxezyg5x06m?device=hammerhead&scale=50&orientation=portrait&osVersion=6.0.1)
-
 Download
 ======
 
-The library will soon be published on **JCenter**. Note that it is still in early development and things might
+The library is available on **JCenter**. Note that it is still in early development and things might
 change with subsequent versions.
 
 To use it in your project, add the following to your project
-
-- Add custom maven repository until the library is published on JCenter
-```groovy
-repositories {
-    maven {
-        url 'https://dl.bintray.com/savvasdalkitsis/maven/'
-    }
-}
-```
 
 - Gradle:
 ```groovy
