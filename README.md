@@ -12,7 +12,7 @@ Demo
 To see some interpolators in action and examples of how _betwixt_ allows composing of different
 interpolators, try downloading the demo app from Google Play™
 
-<a href='https://play.google.com/store/apps/details?id=com.savvasdalkitsis.betwixt&utm_source=global_co&utm_medium=prtnr&utm_content=Mar2515&utm_campaign=PartBadge&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'>
+<a target="_blank" href='https://play.google.com/store/apps/details?id=com.savvasdalkitsis.betwixt&utm_source=global_co&utm_medium=prtnr&utm_content=Mar2515&utm_campaign=PartBadge&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'>
 <img width="300" alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png'/>
 </a>
 
