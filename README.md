@@ -59,6 +59,17 @@ join(accelerateDecelerate(), flip(bounce()))
 ```
 ![joinAccelerateDecelerateFlipBounce](resources/images/joinAccelerateDecelerateFlipBounce.png)
 
+betwixt-rebound
+======
+
+This extension to the library allows integration with the Facebook library
+[rebound](http://facebook.github.io/rebound/) to allow creation of interpolators backed by a Spring
+
+```java
+spring(40,3)
+```
+![spring](resources/images/spring.png)
+
 Download
 ======
 
@@ -69,14 +80,29 @@ To use it in your project, add the following to your project
 
 - Gradle:
 ```groovy
-compile 'com.savvasdalkitsis:betwixt:0.0.1'
+compile 'com.savvasdalkitsis:betwixt:0.0.2'
 ```
 - Maven:
 ```xml
 <dependency>
   <groupId>com.savvasdalkitsis</groupId>
   <artifactId>betwixt</artifactId>
-  <version>0.0.1</version>
+  <version>0.0.2</version>
+</dependency>
+```
+
+for `betwixt-rebound` you can use:
+
+- Gradle:
+```groovy
+compile 'com.savvasdalkitsis:betwixt-rebound:0.0.2'
+```
+- Maven:
+```xml
+<dependency>
+  <groupId>com.savvasdalkitsis</groupId>
+  <artifactId>betwixt-rebound</artifactId>
+  <version>0.0.2</version>
 </dependency>
 ```
 
