@@ -16,6 +16,7 @@
 package com.savvasdalkitsis.betwixt.demo;
 
 import android.os.Bundle;
+import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -24,17 +25,21 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 
+import com.savvasdalkitsis.butterknifeaspects.aspects.BindLayout;
+import com.shazam.android.aspects.base.activity.AspectAppCompatActivity;
+
+import butterknife.Bind;
+
 import static com.savvasdalkitsis.betwixt.demo.HardCodedInterpolators.INTERPOLATORS;
 
-public class MainActivity extends AppCompatActivity {
+@BindLayout(R.layout.activity_main)
+public class MainActivity extends AspectAppCompatActivity {
 
-    private RecyclerView recyclerView;
+    @Bind(R.id.recycler_view) RecyclerView recyclerView;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
         recyclerView.setLayoutManager(new GridLayoutManager(this, getResources().getInteger(R.integer.column_count)));
         recyclerView.addItemDecoration(new SpacesItemDecoration(getResources().getDimensionPixelSize(R.dimen.card_spacing)));
         recyclerView.setAdapter(new InterpolatorsAdapter(INTERPOLATORS));

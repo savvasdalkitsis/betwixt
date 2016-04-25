@@ -54,6 +54,10 @@ dependencies {
     testCompile 'junit:junit:4.12'
     compile ('com.android.support:appcompat-v7:23.2.0',
             'com.android.support:cardview-v7:23.2.0',
-            'com.android.support:recyclerview-v7:23.2.0')
+            'com.android.support:recyclerview-v7:23.2.0',
+            'com.shazam.android:aspects:1.0.0@aar',
+            'com.jakewharton:butterknife:7.0.1',
+            'com.savvasdalkitsis:butterknife-aspects:1.0.0',
+    )
     compile project(':betwixt')
 }
