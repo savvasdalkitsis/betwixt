@@ -37,7 +37,7 @@ ext {
     siteUrl = 'https://github.com/savvasdalkitsis/betwixt'
     gitUrl = 'https://github.com/savvasdalkitsis/betwixt.git'
 
-    libraryVersion = '0.0.1'
+    libraryVersion = gradle.lib_version
 
     developerId = 'savvasdalkitsis'
     developerName = 'Savvas Dalkitsis'
