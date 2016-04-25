@@ -31,6 +31,10 @@ class RasterizeInterpolator implements Interpolator {
         }
     }
 
+    public RasterizeInterpolator(float[] raster) {
+        this.raster = raster;
+    }
+
     @Override
     public float getInterpolation(float input) {
         int index = (int) (input * raster.length);

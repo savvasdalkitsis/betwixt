@@ -403,6 +403,15 @@ public final class Interpolators {
     }
 
     /**
+     * Provides a raster interpolator which pulls values from the provided raster array.
+     * @param raster the array containing the sample values to pull from
+     */
+    @NonNull
+    public static Interpolator rasterize(float[] raster) {
+        return new RasterizeInterpolator(raster);
+    }
+
+    /**
      * A step interpolator with the first half of the duration returning 0 and the second half
      * returning 1
      */

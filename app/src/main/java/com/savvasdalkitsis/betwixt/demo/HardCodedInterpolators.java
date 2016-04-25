@@ -39,6 +39,7 @@ import static com.savvasdalkitsis.betwixt.Interpolators.rasterize;
 import static com.savvasdalkitsis.betwixt.Interpolators.repeat;
 import static com.savvasdalkitsis.betwixt.Interpolators.reverse;
 import static com.savvasdalkitsis.betwixt.Interpolators.step;
+import static com.savvasdalkitsis.betwixt.rebound.SpringInterpolators.spring;
 
 public class HardCodedInterpolators {
     @SuppressWarnings("unchecked")
@@ -86,6 +87,10 @@ public class HardCodedInterpolators {
             new Pair(join(constant(0), constant(0.25f), constant(0.5f), constant(0.75f)),
                     "join(constant(0), constant(0.25), constant(0.5), constant(0.75))"),
             new Pair(rasterize(4, linear()),
-                    "rasterize(4, linear)")
+                    "rasterize(4, linear)"),
+            new Pair(spring().rasterize(),
+                    "spring()"),
+            new Pair(spring(40, 3).rasterize(),
+                    "spring(40, 3)")
     };
 }

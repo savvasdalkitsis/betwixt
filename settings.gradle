@@ -1,1 +1,1 @@
-include ':app', ':betwixt'
+include ':app', ':betwixt', ':betwixt-rebound'

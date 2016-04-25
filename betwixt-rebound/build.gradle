@@ -19,18 +19,22 @@ android {
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile fileTree(include: ['*.jar'], dir: 'libs')
     testCompile 'junit:junit:4.12'
-    compile 'com.android.support:appcompat-v7:23.3.0'
+    compile(
+            'com.android.support:appcompat-v7:23.3.0',
+            'com.facebook.rebound:rebound:0.3.8',
+    )
+    compile project(':betwixt')
 }
 
 ext {
     bintrayRepo = 'maven'
-    bintrayName = 'betwixt'
+    bintrayName = 'betwixt-rebound'
 
     publishedGroupId = 'com.savvasdalkitsis'
-    libraryName = 'betwixt'
-    artifact = 'betwixt'
+    libraryName = 'betwixt-rebound'
+    artifact = 'betwixt-rebound'
 
     libraryDescription = 'Betwixt (/bɪˈtwɪkst/ - preposition & adverb - archaic term for between) is an android library that aims to provide a unified composable api for animation Interpolators, both provided already by the platform and for new ones provided by the community'
 
