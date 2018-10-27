@@ -19,13 +19,13 @@ android {
 }
 
 dependencies {
-    compile fileTree(include: ['*.jar'], dir: 'libs')
-    testCompile 'junit:junit:4.12'
-    compile(
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    testImplementation 'junit:junit:4.12'
+    implementation(
             "com.android.support:appcompat-v7:$support_lib_version",
             'com.facebook.rebound:rebound:0.3.8',
     )
-    compile project(':betwixt')
+    implementation project(':betwixt')
 }
 
 ext {
