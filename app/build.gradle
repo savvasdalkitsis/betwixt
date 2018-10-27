@@ -1,13 +1,13 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 23
-    buildToolsVersion "23.0.3"
+    compileSdkVersion sdk_version
+    buildToolsVersion build_tools_version
 
     defaultConfig {
         applicationId "com.savvasdalkitsis.betwixt"
         minSdkVersion 14
-        targetSdkVersion 23
+        targetSdkVersion sdk_version
         versionCode 2
         versionName "1.1"
     }
@@ -52,13 +52,14 @@ def askFor(String msg) {
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
     testCompile 'junit:junit:4.12'
-    compile('com.android.support:appcompat-v7:23.2.0',
-            'com.android.support:cardview-v7:23.2.0',
-            'com.android.support:recyclerview-v7:23.2.0',
+    compile("com.android.support:appcompat-v7:$support_lib_version",
+            "com.android.support:cardview-v7:$support_lib_version",
+            "com.android.support:recyclerview-v7:$support_lib_version",
             'com.shazam.android:aspects:1.0.0@aar',
             'com.jakewharton:butterknife:7.0.1',
             'com.savvasdalkitsis:butterknife-aspects:1.0.0',
     )
+    annotationProcessor 'com.jakewharton:butterknife:7.0.1'
     compile project(':betwixt')
     compile project(':betwixt-rebound')
 }
