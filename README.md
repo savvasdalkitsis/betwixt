@@ -80,14 +80,14 @@ To use it in your project, add the following to your project
 
 - Gradle:
 ```groovy
-compile 'com.savvasdalkitsis:betwixt:0.0.2'
+compile 'com.savvasdalkitsis:betwixt:1.0.0'
 ```
 - Maven:
 ```xml
 <dependency>
   <groupId>com.savvasdalkitsis</groupId>
   <artifactId>betwixt</artifactId>
-  <version>0.0.2</version>
+  <version>1.0.0</version>
 </dependency>
 ```
 
@@ -95,14 +95,14 @@ for `betwixt-rebound` you can use:
 
 - Gradle:
 ```groovy
-compile 'com.savvasdalkitsis:betwixt-rebound:0.0.2'
+compile 'com.savvasdalkitsis:betwixt-rebound:1.0.0'
 ```
 - Maven:
 ```xml
 <dependency>
   <groupId>com.savvasdalkitsis</groupId>
   <artifactId>betwixt-rebound</artifactId>
-  <version>0.0.2</version>
+  <version>1.0.0</version>
 </dependency>
 ```
 
